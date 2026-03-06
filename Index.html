@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Berry Junior School | Nurturing Young Minds</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #a1e70a;
+        }
+        header {
+            background-color: #6fda67;
+            color: #e10d9e;
+            padding: 15px 5%;
+            position: sticky;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #fdbb2d;
+        }
+        #home {
+            height: 80vh;
+            background: linear-gradient(rgba(26, 42, 108, 0.7), rgba(26, 42, 108, 0.7)), 
+                        url(kids.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: rgb(228, 7, 7);
+            text-align: center;
+            padding: 20px;
+        }
+
+        #home h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        #home p {
+            font-size: 1.2rem;
+            font-style: italic;
+            border-top: 2px solid #fdbb2d;
+            padding-top: 10px;
+        }
+
+        /* --- SECTION SPACING --- */z
+        section {
+            padding: 60px 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: #1a2a6c;
+        }
+
+        /* --- ABOUT SECTION --- */
+        .about-container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .about-box {
+            flex: 1;
+            min-width: 300px;
+            padding: 30px;
+            background: white;
+            border: 1px solid #dddddd8f;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .class-card {
+            flex: 1;
+            min-width: 250px;
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #d6860dd3;
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+
+        .class-card:hover {
+            transform: translateY(-10px);
+            background-color: #20afc8;
+        }
+
+        .gallery-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .gallery-grid img {
+            flex: 1 1 calc(25% - 15px);
+            min-width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 3px solid white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(8, 97, 76, 0.605);
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #25cf86;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        button {
+            background: #570218;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            padding: 40px 10%;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo"> Blue Berry </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to Blue Berry  School</h1>
+        <p>“Nurturing Young Minds for a Bright Future”</p>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">Who We Are</h2>
+        <div class="about-container">
+            <div class="about-box">
+                <h3>Our Mission</h3>
+                <p>To provide a holistic education that empowers students to reach their full potential through creativity, discipline, and innovation.</p>
+            </div>
+            <div class="about-box">
+                <h3>Our Vision</h3>
+                <p>To be a leading center of excellence in early childhood and primary education, fostering lifelong learners.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="academics" style="background-color: #eef2f7;">
+        <h2 class="section-title">Our Classes</h2>
+        <div class="card-container">
+            <div class="class-card">
+                <h3>Baby Class</h3>
+                <p>A fun and interactive environent where children begin there laerning journey through play and creativity.</p>
+            </div>
+            <div class="class-card">
+                <h3>Middle Class</h3>
+                <p>focucs on every basic literacy,numeracy and social skill development.</p>
+            </div>
+            <div class="class-card">
+                <h3>Primary Level</h3>
+                <p>Preparing learners for primary educatio with strong fundamental skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2 class="section-title">School Gallery</h2>
+        <div class="gallery-grid">
+            <img src="boys.jpg" alt="Students playing">
+            <img src="schoolgirl.jpg" alt="Classroom">
+            <img src="schoolgirl.jpg" alt="Art class">
+            <img src="kids.jpg" alt="School library">
+        </div>
+    </section>
+
+    <section id="contact" style="background-color: #246c1a; color: rgb(19, 136, 204);">
+        <h2 class="section-title" style="color: rgb(7, 190, 245);">Contact Us</h2>
+        <div class="contact-form">
+            <form>
+                <div class="form-group">
+                    <label style="color: #df1616;">Name</label>
+                    <input type="text" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label style="color: #21d20d;">Email</label>
+                    <input type="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label style="color: #333;">Message</label>
+                    <textarea rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>Blue Berry Junior School</h4>
+                <p>"Nurturing Young Minds for a Bright Future”</p>
+                <p>Phone: +256 700 000</p>
+                <p>Location: Kampala, Uganda</p>
+            </div>
+            <div>
+                <h3>Follow us</h3>
+                <p> Facebook</p>
+                <p>Twitter</p>
+                <p>Instagram </p> 
+            </div>
+        </div>
+        <hr style="border: 0.5px solid #f82d2d; margin-bottom: 20px;">
+        <p>&copy; 2026 Blue Berry Junior School. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
